@@ -1,0 +1,26 @@
+﻿<!--FORSIDE-->
+    <Page
+    x:Class="UAR.FrontPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UAR"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="Fylker i Norge" 
+                   FontFamily="Georgia" FontSize="40" FontWeight="SemiBold" 
+                   Grid.Row="0" 
+                   TextAlignment="Center" Margin="10,10,10,10"/>
+        <Button Content="Vis Møre og Romsdal" Grid.Row="1" Click="btn_ShowFylke" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,-400,0" Height="100" Width="250" Background="YellowGreen" BorderThickness="2" BorderBrush="DarkOliveGreen" FontFamily="Georgia" FontSize="20" FontWeight="Bold"/>
+        <Button Content="Vis fylker" Grid.Row="1" Click="btn_ShowFylker" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,0,400,0" Height="100" Width="250" Background="YellowGreen" BorderThickness="2" BorderBrush="DarkOliveGreen" FontFamily="Georgia" FontSize="20" FontWeight="Bold"/>
+    </Grid>
+
+</Page>
